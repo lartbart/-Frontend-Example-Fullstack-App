@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+body {
+
+    background: #121212;
+    font-family: 'Poppins';
+    
+}
+
+
+
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.container a {
+    color: rgb(129, 214, 0);
+}
+
+
+.form-container {
+
+
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 3rem;
+    color: white;
+
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    background: rgb(2,0,36);
+    background: linear-gradient(30deg, rgb(29, 29, 29) 0%, rgb(19, 19, 20) 92%);
+    border-radius: 3rem;
+    border: 0.125rem solid transparent;
+    transition: border 0.1s linear;
+
+    #button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 2rem;
+        margin: 1rem 0rem;
+        border-radius: 0.65rem;
+        border: none;
+        background: rgba(155, 216, 34, 0.699);
+        box-shadow: 0px 0px 0.2rem rgba(155, 216, 34, 0.699);
+        color: white;
+        transition: background-color 100ms linear;
+        transition: transform 150ms ease-in-out;
+    }
+    
+    #button:hover {
+        background: rgba(128, 214, 0, 0.829);
+        transform: scale(105%);
+        cursor: pointer;
+    }
+    
+    #text-input {
+        font-family: 'Poppins', sans-serif;
+        margin: 0.8rem 0rem;
+        padding-left: 0.3rem;
+        font-size: 1rem;
+        line-height: 2rem;
+        background-color: black;
+        border: 0.0625rem solid rgba(128, 128, 128, 0.5);
+        border-radius: 0.65rem;
+        color: white;
+        transition: border-color 200ms linear;
+
+    }
+
+    #text-input:hover {
+        border: 0.0625rem solid rgba(155, 216, 34, 0.699);
+    }
+
+
+
+    .header{
+        align-self: center;
+    }
+
+    .login-message {
+        color: rgba(253, 91, 91, 0.952);
+    }
+
+
+    
+}
+.form-container:hover {
+    border: 0.125rem solid gray;
+    border-radius: 3rem;
+}
+
+
+.form-container h2 {
+    font-size: 0.75rem;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.homepage-container {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.top-panel {
+    top: 0;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    border-bottom: 0.0625rem solid rgb(51, 51, 51);
+}
+
+
+#sidebar-button {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #121212;
+    border: 0.0625rem solid transparent;
+    border-radius: 0.5rem;
+    color: white;
+    transition: border-color 150ms linear;
+}
+
+#sidebar-button:hover {
+    border: 0.0625rem solid gray;
+    cursor: pointer;
+}
+
+
+
+.sidebar {
+    background-color: rgb(32, 32, 32);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+    margin-top: 3rem;
+    padding-left: 0.5rem;
+    color: white;
+    border-color: transparent;
+    transition: border-color 250ms linear;
+    transition: padding-top 125ms linear;
+}
+
+
+.sidebar:hover {
+    border-right: 0.125rem solid rgb(51, 51, 51);
+    border-bottom: 0.125rem solid rgb(51, 51, 51);
+    padding-top: 0.5rem;
+}
+
+
+.sidebar button {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(32, 32, 32);
+    border:1px solid transparent;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    display: flex;
+    color: white;
+    transition: background-color linear 250ms;
+    transition: padding-top 250ms linear;
+
+}
+.sidebar button:hover {
+    background-color: gray;
+    cursor: pointer;
+    padding-top: 0.5rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 0.35rem;
+    background-color: rgb(32, 32, 32);
+    border:1px solid transparent;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    display: flex;
+    color: white;
+    transition: background-color linear 250ms;
+    transition: padding-top 250ms linear;
+
+}
+.sidebar a:hover {
+    background-color: gray;
+    cursor: pointer;
+    padding-top: 0.5rem;
+}
+
+#logout {
+    color: rgb(175, 81, 81);
+}
+
+
+#homepage {
+    color: greenyellow;
+}
+
+.view {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+.view b {
+    color: yellowgreen;
+    box-shadow: 0rem 0.1rem transparent;
+    transition: box-shadow 250ms ease-in;
+}
+
+.view b:hover {
+    box-shadow: 0rem 0.1rem rgba(155, 216, 34, 0.699);
+
+}
+
+
+.settings-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    background-color:  rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 100%;
+    padding-left: 20rem;
+    padding-top: 5rem;
+    
+    
+    .form-container {
+        padding: 3rem;
+        border-radius: 1rem;
+        width: 30rem;
+        height: 30rem;
+    }
+    
+    
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem;
+        
+    }
+
+    .header button {
+        background-color:transparent;
+        color: white;
+        border-style: none;
+        width: 100%;
+
+        
+    }
+
+    .header button:hover {
+        box-shadow: 0rem 0.1rem gray;
+        cursor: pointer;
+    }
+
+
+    .update-tab {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+    }
+
+    .delete-tab {
+        display: flex;
+        flex-direction:column;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        gap: 1rem;
+
+       
+    }
+
+    .delete-tab h2 {
+        font-size: 1rem;
+        color: rgb(175, 81, 81);
+    }
+
+    .delete-tab button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 2rem;
+        margin: 1rem 0rem;
+        border-radius: 0.65rem;
+        border: none;
+        background: rgba(216, 55, 34, 0.699);
+        color: white;
+        transition: background-color 100ms linear;
+    }
+
+    .delete-tab button:hover {
+        background-color: rgba(216, 55, 34, 0.897);
+    }
+
+}
+
+
+

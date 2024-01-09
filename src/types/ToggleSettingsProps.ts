@@ -1,0 +1,5 @@
+
+
+type ToggleSettingsProps = {
+    onToggleSettings: () => void;
+  }
