@@ -18,10 +18,10 @@ export const SettingsModal = ({onToggleSettings}: ToggleSettingsProps) => {
     return <div className="settings-modal">
                 <div className="form-container">
                     <div className="header">
-                        <button onClick={e => setSelectedTab(<ChangeUsername/>)}>Change Username</button>
-                        <button onClick={e => setSelectedTab(<ChangeEmail/>)}>Change Email</button>
-                        <button onClick={e => setSelectedTab(<ChangePassword/>)}>Change Password</button>
-                        <button onClick={e => setSelectedTab(<DeleteTab/>)}>Delete Account</button>
+                        <button onClick={_e => setSelectedTab(<ChangeUsername/>)}>Change Username</button>
+                        <button onClick={_e => setSelectedTab(<ChangeEmail/>)}>Change Email</button>
+                        <button onClick={_e => setSelectedTab(<ChangePassword/>)}>Change Password</button>
+                        <button onClick={_e => setSelectedTab(<DeleteTab/>)}>Delete Account</button>
                         <button onClick={onToggleSettings}>X</button>
                     </div>
                     <div>

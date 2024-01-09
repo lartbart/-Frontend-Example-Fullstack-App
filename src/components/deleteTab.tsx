@@ -10,7 +10,7 @@ export const DeleteTab = () => {
                 <h2>Delete Account</h2>
                 <label htmlFor='DeleteCheckBox'>
                 <p>Are you sure?</p>
-                <input type="checkbox" name="DeleteCheckBox" id="DeleteCheckBox" checked = {checkBox} onChange={e => setCheckBox(!checkBox)} />
+                <input type="checkbox" name="DeleteCheckBox" id="DeleteCheckBox" checked = {checkBox} onChange={_e => setCheckBox(!checkBox)} />
                 <> yes </>
                 </label>
 
