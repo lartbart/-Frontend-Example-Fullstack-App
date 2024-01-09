@@ -2,9 +2,10 @@ import axios, { AxiosPromise } from "axios";
 import { useMutation } from "@tanstack/react-query";
 import useSignIn from "react-auth-kit/hooks/useSignIn";
 
+const API_URL = "https://disturbed-fact-production.up.railway.app/api/users"
 
 const login = async (data: UserLogin):AxiosPromise<string> => {
-    return axios.post(process.env.API_URL + "/login", data)
+    return axios.post(API_URL + "/login", data)
 }
 
 export function useLogin() {
