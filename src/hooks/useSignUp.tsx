@@ -1,11 +1,10 @@
 import axios, { AxiosPromise } from "axios";
 import { useMutation } from "@tanstack/react-query";
 
-const URL = "https://disturbed-fact-production.up.railway.app/api/users"
 
 
 const SignUp = async (data: UserRegister): AxiosPromise<any> => {
-    return axios.post(URL + "/register", data)
+    return axios.post(process.env.API_URL + "/register", data)
 }
 
 
