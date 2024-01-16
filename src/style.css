@@ -205,6 +205,12 @@ body {
     padding-top: 0.5rem;
 }
 
+.sidebar h1 {
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
 #logout {
     color: rgb(175, 81, 81);
 }

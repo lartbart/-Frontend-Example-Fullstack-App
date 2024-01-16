@@ -13,13 +13,14 @@ export function useLogin() {
     const mutate = useMutation({
         mutationFn: login,
         retry: 2,
-        onSuccess(data) {
+        onSuccess(data, variables) {
             window.location.href = '/homepage'
             signIn({
                 auth: {
                     token: data.data,
                     type: 'Bearer'
-                }
+                },
+                userState: {name: variables.username}
             })
         },
         onError() {
