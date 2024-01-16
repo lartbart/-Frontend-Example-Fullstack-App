@@ -27,7 +27,7 @@ function Login() {
       setButtonMessage("Success")
     }
     if (isError) {
-      setLoginMessage("Username or Password is Incorrect")
+      setLoginMessage("The user doesn't exist")
     }
   };
 

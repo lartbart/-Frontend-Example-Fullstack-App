@@ -2,10 +2,11 @@ import { useState } from "react";
 import Sidebar from "../components/sidebar";
 import "../style.css"
 import { SettingsModal } from "../components/settingsModal";
-
+import Cookies from "js-cookie";
 
 
 function Homepage() {
+
 
 
 
@@ -20,6 +21,11 @@ function Homepage() {
         setSettingsVisible(!SettingsVisible);
     };
 
+    const getusername = Cookies.get("_auth_state")?.match(/"name":"([^"]+)"/);
+
+    const username = getusername ? getusername[1] : null;
+
+
 
 
     return <div className="homepage-container">
@@ -29,7 +35,7 @@ function Homepage() {
                 {Sidebarvisible && <Sidebar onToggleSettings={toggleSettings}/>}
                 {SettingsVisible && <SettingsModal onToggleSettings={toggleSettings}/>}  
             <div className="view">
-                <h1>Hello, <b>''</b></h1>
+                <h1>Hello, <b>{username}</b></h1>
             </div>
 
            </div>
