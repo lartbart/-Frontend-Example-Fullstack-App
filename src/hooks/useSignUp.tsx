@@ -1,7 +1,7 @@
 import axios, { AxiosPromise } from "axios";
 import { useMutation } from "@tanstack/react-query";
 
-const API_URL = "https://garrulous-glass-production.up.railway.app/api/users/"
+const API_URL = "https://garrulous-glass-production.up.railway.app/api/users"
 
 
 

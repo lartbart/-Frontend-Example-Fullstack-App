@@ -2,7 +2,7 @@ import axios, { AxiosPromise } from "axios";
 import { useMutation } from "@tanstack/react-query";
 import useSignIn from "react-auth-kit/hooks/useSignIn";
 
-const API_URL = "https://garrulous-glass-production.up.railway.app/api/users/"
+const API_URL = "https://garrulous-glass-production.up.railway.app/api/users"
 
 
 const login = async (data: UserLogin):AxiosPromise<string> => {
