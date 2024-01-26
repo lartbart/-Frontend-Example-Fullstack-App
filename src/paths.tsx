@@ -5,7 +5,7 @@ import SignUp from "./pages/SignUp"
 import Cookies from "js-cookie";
 
 
-const getCookie= Cookies.get("_auth_state");
+const auth= Cookies.get("_auth_state");
 
 
 
@@ -14,7 +14,7 @@ export const Paths = () => {
     return (
     <BrowserRouter>
       <Routes>
-        <Route path='/homepage' element={getCookie ? <Homepage/> : <Navigate to='/login'/>}/>
+        <Route path='/homepage' element={auth ? <Homepage/> : <Navigate to='/login'/>}/>
         <Route path='/login' element={<Login/>} />
         <Route path='/signup' element={<SignUp/>}/>
       </Routes>
