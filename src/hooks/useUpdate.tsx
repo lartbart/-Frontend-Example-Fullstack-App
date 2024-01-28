@@ -5,6 +5,7 @@ import Cookies from 'js-cookie'
 
 const API_URL = "https://garrulous-glass-production.up.railway.app/api/users"
 
+
 const getusername = Cookies.get("_auth_state")?.match(/"name":"([^"]+)"/);
 
 const username = getusername ? getusername[1] : null;
