@@ -12,7 +12,7 @@ const username = getusername ? getusername[1] : null;
 
 
 const Update = async (data: UserUpdate): AxiosPromise<any> => {
-    return axios.patch(API_URL + "/update/" + username, data )
+    return axios.patch(API_URL + "/update/" + username, data)
 }
 
 export function useUpdate() {

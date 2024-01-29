@@ -50,7 +50,7 @@ function SignUp() {
         
 
 
-      if (emailRegex.test(email) && password.length > 5) {
+      if (emailRegex.test(email) && password.length >= 5) {
           mutate(userdata)
 
 
